@@ -63,7 +63,7 @@ class Datos {
     var d = direccion.trim().replaceAll(RegExp(r'/+$'), '');
     if (d.isNotEmpty && !RegExp(r'^https?://', caseSensitive: false).hasMatch(d)) {
       // Una dirección de la red local (números o "localhost") va sin cifrar; cualquier otra, por https.
-      d = (RegExp(r'^(d{1,3}.){3}d{1,3}(:d+)?$').hasMatch(d) || d.startsWith('localhost') ? 'http://' : 'https://') + d;
+      d = (RegExp(r'^(\d{1,3}\.){3}\d{1,3}(:\d+)?$').hasMatch(d) || d.startsWith('localhost') ? 'http://' : 'https://') + d;
     }
     return d;
   }
