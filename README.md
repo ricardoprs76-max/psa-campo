@@ -21,7 +21,15 @@ Los predios en conservación suelen quedar en páramos y zonas rurales sin cober
 - Las visitas enviadas aparecen en el mapa web del Proyecto PSA.
 
 ## Capturas de pantalla
-Las capturas se agregarán en la carpeta [`screenshots`](screenshots/) con datos de demostración.
+Capturas tomadas con datos ficticios, conectada a una plataforma [Proyecto PSA](https://github.com/ricardoprs76-max/psa) de prueba.
+
+| Ingreso | Predios asignados | Ficha del predio |
+|---|---|---|
+| ![Ingreso](screenshots/1-ingreso.png) | ![Predios](screenshots/2-predios.png) | ![Ficha](screenshots/3-ficha-predio.png) |
+
+| Mapa (polígono y GPS) | Formulario de visita |
+|---|---|
+| ![Mapa](screenshots/4-mapa.png) | ![Visita](screenshots/5-visita.png) |
 
 ## Instalación y uso
 **Requisitos:** Flutter 3.x (Dart 3) y Android SDK.
