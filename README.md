@@ -1,6 +1,6 @@
 # PSA Campo — App Android para visitas de campo de programas PSA
 
-Aplicación móvil (Flutter) que usan los técnicos de campo del **[Proyecto PSA](https://github.com/ricardoprs76-max/psa)** para visitar los predios de un programa de Pagos por Servicios Ambientales, incluso sin señal, y enviar luego a la plataforma central la ubicación, las fotos y la firma de cada visita.
+Aplicación móvil (Flutter) que usan los técnicos de campo del **[Proyecto PSA](https://github.com/ricardoprs76-max/pago-por-servicios-ambientales)** para visitar los predios de un programa de Pagos por Servicios Ambientales, incluso sin señal, y enviar luego a la plataforma central la ubicación, las fotos y la firma de cada visita.
 
 ## Problema que resuelve
 Los predios en conservación suelen quedar en páramos y zonas rurales sin cobertura. Las visitas se registraban en papel y luego se transcribían, con pérdida de datos y sin evidencia georreferenciada. PSA Campo trabaja sin conexión y sincroniza todo cuando vuelve la señal.
@@ -10,7 +10,7 @@ Los predios en conservación suelen quedar en páramos y zonas rurales sin cober
 - **SQLite** (`sqflite`) como base local sin conexión
 - **flutter_map** + **latlong2** (mapa del predio y su polígono)
 - **geolocator** (GPS con precisión y altitud), **image_picker** (fotos)
-- API REST de la plataforma [Proyecto PSA](https://github.com/ricardoprs76-max/psa) (`http`)
+- API REST de la plataforma [Proyecto PSA](https://github.com/ricardoprs76-max/pago-por-servicios-ambientales) (`http`)
 
 ## Funcionalidades principales
 - Inicio de sesión con el correo de la persona y la contraseña común que da la oficina (la primera vez el usuario se crea solo como funcionario de campo).
@@ -21,7 +21,7 @@ Los predios en conservación suelen quedar en páramos y zonas rurales sin cober
 - Las visitas enviadas aparecen en el mapa web del Proyecto PSA.
 
 ## Capturas de pantalla
-Capturas tomadas con datos ficticios, conectada a una plataforma [Proyecto PSA](https://github.com/ricardoprs76-max/psa) de prueba.
+Capturas tomadas con datos ficticios, conectada a una plataforma [Proyecto PSA](https://github.com/ricardoprs76-max/pago-por-servicios-ambientales) de prueba.
 
 | Ingreso | Predios asignados | Ficha del predio |
 |---|---|---|
@@ -41,10 +41,10 @@ flutter pub get
 flutter run                                                     # en un dispositivo o emulador
 flutter build apk --dart-define=SERVIDOR=https://tu-servidor    # APK apuntando a tu servidor PSA
 ```
-Al abrir la app, escribe la dirección del servidor (si no se fijó al compilar) e ingresa con un usuario creado en la plataforma [Proyecto PSA](https://github.com/ricardoprs76-max/psa). El primer ingreso necesita internet; después funciona sin conexión.
+Al abrir la app, escribe la dirección del servidor (si no se fijó al compilar) e ingresa con un usuario creado en la plataforma [Proyecto PSA](https://github.com/ricardoprs76-max/pago-por-servicios-ambientales). El primer ingreso necesita internet; después funciona sin conexión.
 
 ## Proyectos relacionados
-- **[Proyecto PSA](https://github.com/ricardoprs76-max/psa):** plataforma web central (Next.js + PostgreSQL/PostGIS) donde se gestionan los convenios, predios, expedientes y pagos, y adonde llegan las visitas de esta app.
+- **[Proyecto PSA](https://github.com/ricardoprs76-max/pago-por-servicios-ambientales):** plataforma web central (Next.js + PostgreSQL/PostGIS) donde se gestionan los convenios, predios, expedientes y pagos, y adonde llegan las visitas de esta app.
 
 ## Contacto
 **Ricardo Augusto Porras Díaz** — Desarrollador de software y abogado especialista en derecho administrativo
